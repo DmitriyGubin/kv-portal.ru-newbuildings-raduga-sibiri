@@ -1,0 +1,1051 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>КВ</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!-- Swiper-slider -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Swiper-slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!--  Ползунок -->
+    <script src="js/polzun/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/polzun/jquery-ui.min.js"></script>
+    <!--  Ползунок -->
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/check.js"></script>
+</head>
+<body>
+    <div class="top-banner">
+        <img src="img/main_banner.png">
+        <div class="top-banner-text">
+            <div class="content text-wrap">
+                <div class="banner-title">
+                    <p>Жилой комплекс</p>
+                    <h2>Радуга Сибири</h2>
+                    <span>
+                        В окружении природы с видом на благоустроенное озеро
+                    </span>
+
+                    <a class="buttonn pop-up-excurs" style="display: none;">ЗАПИШИТЕСЬ НА ЭКСКУРСИЮ</a>
+                </div>
+
+                <div class="banner-form">
+                    <h2>Запишитесь <br> на экскурсию в пару кликов</h2>
+                    <div>
+                        <label for="head-name">BАШЕ ИМЯ</label>
+                        <br>
+                        <div class="name-inp-box-head">
+                            <input id="head-name" placeholder="Введите ваше имя" type="text"/>
+                            <div style="display: none;" class="succes_var">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#51B370"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6601 5.9816C13.3282 5.64253 12.777 5.64253 12.4451 5.9816L7.55986 10.9653L5.56193 8.9053C5.21746 8.57263 4.67883 8.57263 4.33436 8.9181C4.00868 9.26357 4.00868 9.81376 4.34063 10.1656L6.91476 12.7822L6.95234 12.827C7.29054 13.1789 7.83543 13.1789 8.17364 12.827L13.6601 7.22273C13.992 6.87726 13.992 6.32067 13.6601 5.9816Z" fill="white"></path>
+                                </svg>
+                            </div>
+
+                            <div style="display: none;" class="error_var">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#E7574E"></path>
+                                    <path d="M12.0515 7.01652L10.0683 8.99998L12.0515 10.9833C12.3465 11.2784 12.3465 11.7565 12.0515 12.0516C11.9041 12.199 11.7109 12.2727 11.5178 12.2727C11.3243 12.2727 11.131 12.1991 10.9837 12.0516L9.00005 10.068L7.01652 12.0516C6.86915 12.199 6.67588 12.2727 6.48256 12.2727C6.2893 12.2727 6.09616 12.1991 5.94866 12.0516C5.65366 11.7566 5.65366 11.2785 5.94866 10.9833L7.93185 8.99996L5.94854 7.01652C5.65355 6.72153 5.65355 6.24337 5.94854 5.94837C6.24349 5.6536 6.72136 5.6536 7.01641 5.94837L9.00003 7.93183L10.9835 5.94837C11.2786 5.6536 11.7565 5.6536 12.0514 5.94837C12.3465 6.24337 12.3465 6.72153 12.0515 7.01652Z" fill="white"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="head-phone">ТЕЛЕФОН</label>
+                        <br>
+                        <div class="phone-inp-box-head">
+                            <input id="head-phone" type="text" placeholder="+7 (___) ___–____" />
+
+                            <div style="display: none;" class="succes_var">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#51B370"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6601 5.9816C13.3282 5.64253 12.777 5.64253 12.4451 5.9816L7.55986 10.9653L5.56193 8.9053C5.21746 8.57263 4.67883 8.57263 4.33436 8.9181C4.00868 9.26357 4.00868 9.81376 4.34063 10.1656L6.91476 12.7822L6.95234 12.827C7.29054 13.1789 7.83543 13.1789 8.17364 12.827L13.6601 7.22273C13.992 6.87726 13.992 6.32067 13.6601 5.9816Z" fill="white"></path>
+                                </svg>
+                            </div>
+
+                            <div style="display: none;" class="error_var">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#E7574E"></path>
+                                    <path d="M12.0515 7.01652L10.0683 8.99998L12.0515 10.9833C12.3465 11.2784 12.3465 11.7565 12.0515 12.0516C11.9041 12.199 11.7109 12.2727 11.5178 12.2727C11.3243 12.2727 11.131 12.1991 10.9837 12.0516L9.00005 10.068L7.01652 12.0516C6.86915 12.199 6.67588 12.2727 6.48256 12.2727C6.2893 12.2727 6.09616 12.1991 5.94866 12.0516C5.65366 11.7566 5.65366 11.2785 5.94866 10.9833L7.93185 8.99996L5.94854 7.01652C5.65355 6.72153 5.65355 6.24337 5.94854 5.94837C6.24349 5.6536 6.72136 5.6536 7.01641 5.94837L9.00003 7.93183L10.9835 5.94837C11.2786 5.6536 11.7565 5.6536 12.0514 5.94837C12.3465 6.24337 12.3465 6.72153 12.0515 7.01652Z" fill="white"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span>
+                        Нажимая кнопку «Записаться», вы соглашаетесь с <a href="https://kv-portal.ru/polit_obrab/">политикой обработки персональных данных.</a>
+                    </span>
+
+                    <button class="buttonn" id="top-form-excurs">
+                        ЗАПИСАТЬСЯ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="under-banner">
+        <div class="content under-banner-box">
+            <div class="under-banner-item">
+                <img src="img/under-banner-1.png">
+                <span>Сроки сдачи IV-22</span>
+            </div>
+
+            <div class="under-banner-item">
+                <img src="img/under-banner-2.png">
+                <span>монолит кирпич</span>
+            </div>
+
+            <div class="under-banner-item">
+                <img src="img/under-banner-3.png">
+                <span>Строительный концерн Сибирь</span>
+            </div>
+
+            <div class="under-banner-item">
+                <img class="map-point" src="img/under-banner-4.png">
+                <span>ул. Забалуева</span>
+            </div>
+
+            <div class="under-banner-item">
+                <img src="img/under-banner-5.png">
+                <span>15 минут до станции метро "карла маркса"</span>
+            </div>
+        </div>
+    </div>
+
+    <!--  Мобильная версия -->
+    <div class="swiper-container-under-banner" style="display: none;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slid-content">
+                    <img src="img/under-banner-1.png">
+                    <span>Сроки сдачи IV-22</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slid-content">
+                    <img src="img/under-banner-2.png">
+                    <span>монолит кирпич</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slid-content">
+                    <img src="img/under-banner-3.png">
+                    <span>Строительный концерн Сибирь</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slid-content">
+                    <img class="map-point" src="img/under-banner-4.png">
+                    <span>ул. Забалуева</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slid-content">
+                    <img src="img/under-banner-5.png">
+                    <span>15 минут до станции метро "карла маркса"</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prevv">&#10094;</div>
+        <div class="swiper-button-nextt">&#10095;</div>
+    </div>
+   <!--  Мобильная версия -->
+
+    <div class="content">
+
+        <div class="quarter-description">
+            <h2 class="title-newbild">Описание квартала</h2>
+            <p>
+               Многоквартирный дом №3 входит в состав жилого комплекса «Радуга Сибири», застройщиком которого является промышленно-строительный концерн «Сибирь». Строительство ЖК «Радуга Сибири» осуществляется в Ленинском районе по ул. Забалуева.
+               <br>
+               <br>
+               Трехподъездная 17-этажная новостройка выполнена из сборного железобетона. В строящемся доме представлено 602 квартиры, студии, где кухонное пространство объединено с жилой комнатой, и квартиры с изолированной кухней и комнатами. Площадь квартир от 19 до 70 кв.м. В каждом подъезде отведено место под колясочную и место для консьержа.
+            </p>
+        </div>
+
+        <div class="unique-details">
+            <h2 class="title-newbild">Уникальные детали проекта</h2>
+            <div class="unique-box">
+
+               <img class="unique-box-img" src="img/without_car.png">
+
+               <div>
+                    <h3>Двор без машин</h3>
+                    <img src="img/delimeter.png">
+                    <p>
+                        «Двор без машин» – это комфорт как для
+                        пешеходов, так и для владельцев автомобилей.  Благодаря сквозным подъездам мы разделили  зону парковок и пространство для жизни: детские площадки, территория для занятий 
+                        спортом и спокойного отдыха.
+                    </p>
+               </div>
+ 
+            </div>
+
+             <div class="unique-box reverse">
+
+               <img class="unique-box-img" src="img/sreda.png">
+
+               <div>
+                    <h3>Безопасная среда</h3>
+                    <img src="img/delimeter.png">
+                    <p>
+                        Огороженная территория. За безопасностью
+                        следят умные камеры, которые установлены
+                        в холлах, а также на входах в подъезд. 
+                        А с помощью приложения на смартфоне 
+                        Вы можете из любой точки мира открыть 
+                        дверь в подъезд.
+                    </p>
+               </div>
+                
+            </div>  
+        </div>
+
+        <div class="infrastructure">
+            <h2 class="title-newbild">Вся инфраструктура в шаговой доступности</h2>
+            <div class="infra-container">
+                <div class="infra-box">
+                    <h3>Для взрослых</h3>
+                    <div class="infra-items">
+                        <div>
+                            <img src="img/vzrosl-nabereznaya.png">
+                            <span>
+                                Благоустроенная набережная рядом с домом
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="img/vzrosl-sumka.png">
+                            <span>
+                                Рядом магазины, салоны красоты, больницы
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="img/vzrosl-ozero.png">
+                            <span>
+                                Большое озеро и  зеленые насаждения
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="img/vzrosl-video.png">
+                            <span>
+                                Система  видеонаблюдения и  контроля доступа
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="infra-box">
+                    <h3>Для детей</h3>
+                    <div class="infra-items">
+                        <div>
+                            <img src="img/child-bear.png">
+                            <span>
+                               В шаговой доступности детский сад
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="img/child-hat.png">
+                            <span>
+                                В шаговой доступности школа
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="img/child-ball.png">
+                            <span>
+                                Спортивные комплексы для детского развития
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="img/child-horse.png">
+                            <span>
+                                Благоустроенный двор и безопасная детская площадка
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="galeryy">
+            <h2 class="title-newbild">Фотогалерея</h2>
+            <div class="galery-box">
+                <img src="img/galery_1.png">
+                <img src="img/galery_2.png">
+                <img src="img/galery_3.png">
+                <img src="img/galery_4.png">
+                <img class="modify-galery-item" src="img/galery_5.png">
+            </div>
+        </div> 
+    </div>
+
+    <div class="presentation">
+        <img class="mobile-book" style="display:none;" src="img/present-book-mobile.png">
+        <img class="fonn" src="img/present-fon.png">
+        <div class="presentation-text">
+            <div class="content presentation-box modify-content">
+                <img class="bookk" src="img/present-book.png">
+                <div>
+                    <h3>Больше информации в презентации</h3>
+                    <img src="img/delimeter.png">
+                    <p>
+                        Скачайте презентацию и получите
+                        подробную информации о жилом комплексе 
+                        в одном файле. 
+                    </p>
+
+                    <a class="buttonn pop-up-present">
+                        СКАЧАТЬ ПРЕЗЕНТАЦИЮ 
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="content">
+
+        <div class="planirovki">
+             <h2 class="title-newbild">Планировки квартир</h2>
+             <div class="choice-plan">
+                <a class="plan-icon">
+                    <img src="img/1room.png">
+                    <span>1-комнатная</span>
+                </a>
+
+                <a class="plan-icon">
+                    <img src="img/1room.png">
+                    <span>2-комнатная</span>
+                </a>
+
+                <a class="plan-icon">
+                    <img src="img/1room.png">
+                    <span>3-комнатная</span>
+                </a> 
+             </div>
+
+             <div class="plan-box">
+                <div class="plan-item">
+                    <img src="img/planirovki.png">
+                    <div class="plan-item-info">
+                        <div>
+                           <h3>2-комнатная</h3>
+                           <h3>58,5 м²</h3>
+                        </div>
+
+                        <a class="buttonn pop-up-price">
+                            УЗНАТЬ ЦЕНУ
+                        </a>
+                    </div>
+                    <span style="display: none;" class="plan-url">
+                        https://macroserver.ru/id/1262927/          
+                    </span>
+                </div>
+
+                <div class="plan-item">
+                    <img src="img/planirovki.png">
+                    <div class="plan-item-info">
+                        <div>
+                           <h3>2-комнатная</h3>
+                           <h3>58,5 м²</h3>
+                        </div>
+
+                        <a class="buttonn pop-up-price">
+                            УЗНАТЬ ЦЕНУ
+                        </a>
+                    </div>
+
+                    <span style="display: none;" class="plan-url">
+                        https://macroserver.ru/id/2871431/          
+                    </span>
+                </div>
+
+                <div class="plan-item">
+                    <img src="img/planirovki.png">
+                    <div class="plan-item-info">
+                        <div>
+                           <h3>2-комнатная</h3>
+                           <h3>58,5 м²</h3>
+                        </div>
+
+                        <a class="buttonn pop-up-price">
+                            УЗНАТЬ ЦЕНУ
+                        </a>
+                    </div>
+                    <span style="display: none;" class="plan-url">
+                        https://macroserver.ru/id/1565951/          
+                    </span>
+                </div>
+             </div>
+
+             <a class="buttonn all-plan pop-up-plan">
+                СКАЧАТЬ ВСЕ ПЛАНИРОВКИ
+             </a>
+        </div>
+
+        <div class="excursions">
+            <div class="order-exc">
+                <img src="img/excursion.png">
+                <div class="order-exc-text">
+                    <h3>Запишитесь на  экскурсию, чтобы увидеть свою квартиру</h3>
+                    <p>
+                        Мы покажем Вам актуальные квартиры, благоустройство жилого комплекса, ответим на вопросы и расскажем о ходе строительства.
+                    </p>
+                    <a class="buttonn pop-up-excurs">
+                        ЗАПИСАТЬСЯ НА ЭКСКУРСИЮ
+                    </a>
+                </div>
+            </div>
+
+            <div class="additionally">
+                <div class="add-block">
+                    <h3>Закажем такси</h3>
+                    <img src="img/delimeter.png">
+                    <p>
+                       Вызовем для вас такси прямо до объекта. Покажем актуальные остатки и ответим на все интересующие вас вопросы.
+                    </p>
+
+                    <a class="buttonn taxi pop-up-taxi">
+                        ЗАКАЗАТЬ ТАКСИ
+                    </a>
+                </div>
+
+                <div class="add-block">
+                    <h3>Вы из другого города?</h3>
+                    <img src="img/delimeter.png">
+                    <p>
+                       Организуем online-просмотр. Вы увидите проект изнутри, ход строительства, актуальные остатки, аэропанораму.
+                    </p>
+
+                    <a class="buttonn online pop-up-online">
+                        ЗАПИСАТЬСЯ НА ОНЛАЙН-ПРОСМОТР
+                    </a>
+                </div>
+            </div>    
+        </div>
+
+        <div class="ipoteka">
+            <div class="ipoteka-text">
+                <h3>Поможем получить особые условия ипотеки</h3>
+                <ul>
+                    <li>
+                        Как в период строительства платить в два раза меньше ежемесячно?
+                    </li>
+
+                    <li>
+                        Как получить одобрение по двум документам?
+                    </li>
+
+                    <li>
+                        Как получить ставку 5% по ипотеке?
+                    </li>
+                </ul>
+            </div>
+
+            <div class="calcc">
+                <p class="calc-label">Стоимость квартиры (руб)</p>
+                <div class="polzunok-container">
+                    <div class="polzunok-1">
+                    </div>
+                    <div class="limits">
+                         <p>2 900 000</p>
+                         <p>30 000 000</p>
+                    </div>
+                </div>
+
+                <p class="calc-label">Первоначальный взнос (руб)</p>
+                <div class="polzunok-container">
+                    <div class="polzunok-2">
+                    </div>
+                    <div class="limits">
+                         <p>300 000</p>
+                         <p>24 000 000</p>
+                    </div>
+                </div>
+
+                <p class="calc-label">Срок ипотеки</p>
+                <div class="polzunok-container modify-polzun">
+                    <div class="polzunok-3">
+                    </div>
+                    <div class="limits">
+                         <p>1</p>
+                         <p>30</p>
+                    </div>
+                </div>
+
+                <a class="buttonn pop-up-ipoteka">РАСЧИТАТЬ ИПОТЕКУ</a>
+            </div>
+        </div>
+
+        <div class="call-order">
+            <div class="photoo">
+                <div class="worker">
+                    <div class="linee">
+                        Светлана Лазарева
+                    </div>
+                    <div class="position">
+                        Специалист по недвижимости
+                    </div>
+                </div>
+
+                <img src="img/worker.png">
+            </div>
+
+            <div class="call-form">
+                <h3>Остались вопросы?</h3>
+                <img src="img/delimeter.png">
+                <p>
+                    Укажите свои контактные данные. Наш эксперт свяжется с Вами и ответит на все вопросы.
+                </p>
+
+                <div class="inp-plus-but">
+                    <div class="phone-inp-box-footer">
+                        <input id="footer-phone" type="text" placeholder="+7 (___) ___–____" />
+
+                        <div style="display: none;" class="succes_var">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#51B370"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6601 5.9816C13.3282 5.64253 12.777 5.64253 12.4451 5.9816L7.55986 10.9653L5.56193 8.9053C5.21746 8.57263 4.67883 8.57263 4.33436 8.9181C4.00868 9.26357 4.00868 9.81376 4.34063 10.1656L6.91476 12.7822L6.95234 12.827C7.29054 13.1789 7.83543 13.1789 8.17364 12.827L13.6601 7.22273C13.992 6.87726 13.992 6.32067 13.6601 5.9816Z" fill="white"></path>
+                            </svg>
+                        </div>
+
+                        <div style="display: none;" class="error_var">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#E7574E"></path>
+                                <path d="M12.0515 7.01652L10.0683 8.99998L12.0515 10.9833C12.3465 11.2784 12.3465 11.7565 12.0515 12.0516C11.9041 12.199 11.7109 12.2727 11.5178 12.2727C11.3243 12.2727 11.131 12.1991 10.9837 12.0516L9.00005 10.068L7.01652 12.0516C6.86915 12.199 6.67588 12.2727 6.48256 12.2727C6.2893 12.2727 6.09616 12.1991 5.94866 12.0516C5.65366 11.7566 5.65366 11.2785 5.94866 10.9833L7.93185 8.99996L5.94854 7.01652C5.65355 6.72153 5.65355 6.24337 5.94854 5.94837C6.24349 5.6536 6.72136 5.6536 7.01641 5.94837L9.00003 7.93183L10.9835 5.94837C11.2786 5.6536 11.7565 5.6536 12.0514 5.94837C12.3465 6.24337 12.3465 6.72153 12.0515 7.01652Z" fill="white"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="buttonn pop-up-call-order">
+                        ЗАКАЗАТЬ ЗВОНОК
+                    </button>    
+                </div>
+            </div>
+        </div>
+
+        <span class="title_good_choise">Лучшие предложения дня</span>
+        <img class="fire" src="https://cdn.esoft.digital/content/media/site/fd/5b/92b67ff7b8b261babad38e6dff3bbc825b4a7f89.svg" alt="#">
+
+        <p class="descr_good_choise">Мы подобрали для вас самые актуальные и выгодные предложения</p>
+
+        <div class="list_apart">
+            <div class="swiper-wrapper swiper-wrapper-block">
+                <div class="swiper-slide swiper-slide-block">
+                    <a href="https://kv-portal.ru/catalog/crm3328524/" class="block_apart" target="_blank">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper swiper-wrapper-photo">
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/1.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/2.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/3.jpg">
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev-photo">
+                                <svg viewBox="0 0 24 24"><path d="M15.022 3.162a1.005 1.005 0 1 1 1.421 1.421l-7.24 7.24a.25.25 0 0 0 0 .354l7.245 7.245a1.002 1.002 0 0 1-1.416 1.416L6.9 12.707a1 1 0 0 1 0-1.414l8.122-8.13z"></path></svg>
+                            </div>
+                            <div class="swiper-button-next-photo">
+                                <svg viewBox="0 0 24 24"><path d="M8.968 20.838a1.001 1.001 0 1 1-1.416-1.416l7.245-7.245a.25.25 0 0 0 0-.354L7.552 4.578a1.002 1.002 0 0 1 1.416-1.416l8.131 8.13a1 1 0 0 1 0 1.415l-8.13 8.131z"></path></svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="overlook">Просмотрено</div>
+                        </div>
+
+                        <div class="text_block">
+                            <div class="main_text">
+                                <div class="price">
+                                    <span class="first_price">3 000 000 ₽ </span>
+                                </div>
+                                <p class="price_per_m">
+                                    100 000 ₽/м<sup>2</sup>
+                                </p>
+
+                                <span class="rooms">1-комн. квартира</span>
+                                <span class="delimeter">|</span>
+                                <span class="area">30.5 м<sup>2</sup></span>
+                                <span class="delimeter">|</span>
+                                <span class="floor">13/15 эт.</span>
+
+                                <p class="street">
+                                    ул. Ломоносова, д. 46
+                                </p>
+
+                                <p class="district">
+                                    Новосибирск, р-н Калининский
+                                </p>
+                            </div>
+
+                            <button class="show_phone">
+                                <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                Показать телефон
+                            </button>
+
+                            <div class="seller" style="display: none;">
+                                <img src="https://cdn.esoft.digital/content/media/site/1e/54/7d662dcc6c409c2ba787ec760d8e27503dc8ab27.svg" style="min-width: 48px; max-width: 48px; min-height: 48px;">
+                                <div>
+                                    <p>+7 913 735 54 91</p>
+                                    <p>Дмитрий Губин</p>
+                                </div>
+                            </div>
+
+                            <object class="phone_ref" style="display: none;">
+                                <a class="call_button" href="tel:+7953786">
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    Позвонить
+                                </a>
+                            </object>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide swiper-slide-block">
+                    <a href="https://kv-portal.ru/catalog/crm3328524/" class="block_apart" target="_blank">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper swiper-wrapper-photo">
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/3.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/1.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/2.jpg">
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev-photo">
+                                <svg viewBox="0 0 24 24"><path d="M15.022 3.162a1.005 1.005 0 1 1 1.421 1.421l-7.24 7.24a.25.25 0 0 0 0 .354l7.245 7.245a1.002 1.002 0 0 1-1.416 1.416L6.9 12.707a1 1 0 0 1 0-1.414l8.122-8.13z"></path></svg>
+                            </div>
+                            <div class="swiper-button-next-photo">
+                                <svg viewBox="0 0 24 24"><path d="M8.968 20.838a1.001 1.001 0 1 1-1.416-1.416l7.245-7.245a.25.25 0 0 0 0-.354L7.552 4.578a1.002 1.002 0 0 1 1.416-1.416l8.131 8.13a1 1 0 0 1 0 1.415l-8.13 8.131z"></path></svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="overlook">Просмотрено</div>
+                        </div>
+
+                        <div class="text_block">
+                            <div class="main_text">
+                                <div class="price">
+                                    <span class="first_price">3 000 000 ₽ </span>
+                                </div>
+                                <p class="price_per_m">
+                                    100 000 ₽/м<sup>2</sup>
+                                </p>
+
+                                <span class="rooms">1-комн. квартира</span>
+                                <span class="delimeter">|</span>
+                                <span class="area">30.5 м<sup>2</sup></span>
+                                <span class="delimeter">|</span>
+                                <span class="floor">13/15 эт.</span>
+
+                                <p class="street">
+                                    ул. Ломоносова, д. 46
+                                </p>
+
+                                <p class="district">
+                                    Новосибирск, р-н Калининский
+                                </p>
+                            </div>
+
+                            <button class="show_phone">
+                                <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                Показать телефон
+                            </button>
+
+                            <div class="seller" style="display: none;">
+                                <img src="https://cdn.esoft.digital/content/media/site/1e/54/7d662dcc6c409c2ba787ec760d8e27503dc8ab27.svg" style="min-width: 48px; max-width: 48px; min-height: 48px;">
+                                <div>
+                                    <p>+7 913 735 54 91</p>
+                                    <p>Дмитрий Губин</p>
+                                </div>
+                            </div>
+
+                            <object class="phone_ref" style="display: none;">
+                                <a class="call_button" href="tel:+7953786">
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    Позвонить
+                                </a>
+                            </object>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide swiper-slide-block">
+                    <a href="https://kv-portal.ru/catalog/crm3328524/" class="block_apart" target="_blank">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper swiper-wrapper-photo">
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/2.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/1.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/3.jpeg">
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev-photo">
+                                <svg viewBox="0 0 24 24"><path d="M15.022 3.162a1.005 1.005 0 1 1 1.421 1.421l-7.24 7.24a.25.25 0 0 0 0 .354l7.245 7.245a1.002 1.002 0 0 1-1.416 1.416L6.9 12.707a1 1 0 0 1 0-1.414l8.122-8.13z"></path></svg>
+                            </div>
+                            <div class="swiper-button-next-photo">
+                                <svg viewBox="0 0 24 24"><path d="M8.968 20.838a1.001 1.001 0 1 1-1.416-1.416l7.245-7.245a.25.25 0 0 0 0-.354L7.552 4.578a1.002 1.002 0 0 1 1.416-1.416l8.131 8.13a1 1 0 0 1 0 1.415l-8.13 8.131z"></path></svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="overlook">Просмотрено</div>
+                        </div>
+
+                        <div class="text_block">
+                            <div class="main_text">
+                                <div class="price">
+                                    <span class="first_price">3 000 000 ₽ </span>
+                                </div>
+                                <p class="price_per_m">
+                                    100 000 ₽/м<sup>2</sup>
+                                </p>
+
+                                <span class="rooms">1-комн. квартира</span>
+                                <span class="delimeter">|</span>
+                                <span class="area">30.5 м<sup>2</sup></span>
+                                <span class="delimeter">|</span>
+                                <span class="floor">13/15 эт.</span>
+
+                                <p class="street">
+                                    ул. Ломоносова, д. 46
+                                </p>
+
+                                <p class="district">
+                                    Новосибирск, р-н Калининский
+                                </p>
+                            </div>
+
+                            <button class="show_phone">
+                                <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                Показать телефон
+                            </button>
+
+                            <div class="seller" style="display: none;">
+                                <img src="https://cdn.esoft.digital/content/media/site/1e/54/7d662dcc6c409c2ba787ec760d8e27503dc8ab27.svg" style="min-width: 48px; max-width: 48px; min-height: 48px;">
+                                <div>
+                                    <p>+7 913 735 54 91</p>
+                                    <p>Дмитрий Губин</p>
+                                </div>
+                            </div>
+
+                            <object class="phone_ref" style="display: none;">
+                                <a class="call_button" href="tel:+7953786">
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    Позвонить
+                                </a>
+                            </object>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide swiper-slide-block">
+                    <a href="https://kv-portal.ru/catalog/crm3328524/" class="block_apart" target="_blank">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper swiper-wrapper-photo">
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/1.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/2.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/3.jpg">
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev-photo">
+                                <svg viewBox="0 0 24 24"><path d="M15.022 3.162a1.005 1.005 0 1 1 1.421 1.421l-7.24 7.24a.25.25 0 0 0 0 .354l7.245 7.245a1.002 1.002 0 0 1-1.416 1.416L6.9 12.707a1 1 0 0 1 0-1.414l8.122-8.13z"></path></svg>
+                            </div>
+                            <div class="swiper-button-next-photo">
+                                <svg viewBox="0 0 24 24"><path d="M8.968 20.838a1.001 1.001 0 1 1-1.416-1.416l7.245-7.245a.25.25 0 0 0 0-.354L7.552 4.578a1.002 1.002 0 0 1 1.416-1.416l8.131 8.13a1 1 0 0 1 0 1.415l-8.13 8.131z"></path></svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="overlook">Просмотрено</div>
+                        </div>
+
+                        <div class="text_block">
+                            <div class="main_text">
+                                <div class="price">
+                                    <span class="first_price">3 000 000 ₽ </span>
+                                </div>
+                                <p class="price_per_m">
+                                    100 000 ₽/м<sup>2</sup>
+                                </p>
+
+                                <span class="rooms">1-комн. квартира</span>
+                                <span class="delimeter">|</span>
+                                <span class="area">30.5 м<sup>2</sup></span>
+                                <span class="delimeter">|</span>
+                                <span class="floor">13/15 эт.</span>
+
+                                <p class="street">
+                                    ул. Ломоносова, д. 46
+                                </p>
+
+                                <p class="district">
+                                    Новосибирск, р-н Калининский
+                                </p>
+                            </div>
+
+                            <button class="show_phone">
+                                <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                Показать телефон
+                            </button>
+
+                            <div class="seller" style="display: none;">
+                                <img src="https://cdn.esoft.digital/content/media/site/1e/54/7d662dcc6c409c2ba787ec760d8e27503dc8ab27.svg" style="min-width: 48px; max-width: 48px; min-height: 48px;">
+                                <div>
+                                    <p>+7 913 735 54 91</p>
+                                    <p>Дмитрий Губин</p>
+                                </div>
+                            </div>
+
+                            <object class="phone_ref" style="display: none;">
+                                <a class="call_button" href="tel:+7953786">
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    Позвонить
+                                </a>
+                            </object>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide swiper-slide-block">
+                    <a href="https://kv-portal.ru/catalog/crm3328524/" class="block_apart" target="_blank">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper swiper-wrapper-photo">
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/3.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/1.jpg">
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-photo">
+                                    <img src="img/2.jpg">
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev-photo">
+                                <svg viewBox="0 0 24 24"><path d="M15.022 3.162a1.005 1.005 0 1 1 1.421 1.421l-7.24 7.24a.25.25 0 0 0 0 .354l7.245 7.245a1.002 1.002 0 0 1-1.416 1.416L6.9 12.707a1 1 0 0 1 0-1.414l8.122-8.13z"></path></svg>
+                            </div>
+                            <div class="swiper-button-next-photo">
+                                <svg viewBox="0 0 24 24"><path d="M8.968 20.838a1.001 1.001 0 1 1-1.416-1.416l7.245-7.245a.25.25 0 0 0 0-.354L7.552 4.578a1.002 1.002 0 0 1 1.416-1.416l8.131 8.13a1 1 0 0 1 0 1.415l-8.13 8.131z"></path></svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="overlook">Просмотрено</div>
+                        </div>
+
+                        <div class="text_block">
+                            <div class="main_text">
+                                <div class="price">
+                                    <span class="first_price">3 000 000 ₽ </span>
+                                </div>
+                                <p class="price_per_m">
+                                    100 000 ₽/м<sup>2</sup>
+                                </p>
+
+                                <span class="rooms">1-комн. квартира</span>
+                                <span class="delimeter">|</span>
+                                <span class="area">30.5 м<sup>2</sup></span>
+                                <span class="delimeter">|</span>
+                                <span class="floor">13/15 эт.</span>
+
+                                <p class="street">
+                                    ул. Ломоносова, д. 46
+                                </p>
+
+                                <p class="district">
+                                    Новосибирск, р-н Калининский
+                                </p>
+                            </div>
+
+                            <button class="show_phone">
+                                <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                Показать телефон
+                            </button>
+
+                            <div class="seller" style="display: none;">
+                                <img src="https://cdn.esoft.digital/content/media/site/1e/54/7d662dcc6c409c2ba787ec760d8e27503dc8ab27.svg" style="min-width: 48px; max-width: 48px; min-height: 48px;">
+                                <div>
+                                    <p>+7 913 735 54 91</p>
+                                    <p>Дмитрий Губин</p>
+                                </div>
+                            </div>
+
+                            <object class="phone_ref" style="display: none;">
+                                <a class="call_button" href="tel:+7953786">
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    Позвонить
+                                </a>
+                            </object>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Cтрелки -->
+            <div class="swiper-button-prev-block">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7.226 11.25H19a.75.75 0 0 1 0 1.5H7.227l5.302 5.311a.748.748 0 0 1-1.057 1.057l-6.411-6.41a1 1 0 0 1 0-1.415l6.41-6.411a.75.75 0 0 1 1.062 1.061L7.227 11.25z"></path>
+                </svg>
+            </div>
+
+            <div class="swiper-button-next-block">
+                <svg viewBox="0 0 24 24">
+                    <path d="M16.773 12.75H5a.75.75 0 1 1 0-1.5h11.773L11.47 5.939a.747.747 0 0 1 1.057-1.057l6.411 6.41a1 1 0 0 1 0 1.415l-6.41 6.411a.747.747 0 0 1-1.058-1.057l5.302-5.311z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+<div class="services">
+    <div class="content">
+      <h2 class="services-title">Услуги на все случаи жизни</h2>
+      <div class="all-serv-line">
+        <a href="https://kv-portal.ru/services/">ВСЕ УСЛУГИ</a>
+      </div>
+      <div class="serv-box">
+        <div class="serv-item">
+          <svg width="65" height="60" viewBox="0 0 65 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m 56.306299,31.858544 -8.5154,4.949801 c -0.8697,-0.822701 -2.0045,-1.451301 -3.288699,-1.821801 -1.2842,-0.3705 -2.6718,-0.4696 -4.0213,-0.287202 l -8.7042,1.183701 c -1.3866,0.186999 -2.8097,0.129399 -4.1638,-0.168701 l -0.9735,-0.2158 c -2.464,-0.550199 -5.0633,-0.6261 -7.5734,-0.220999 -2.5102,0.405001 -4.8558,1.278799 -6.8346,2.545901 l -0.3665,-1.6293 c -0.0535,-0.2374 -0.226,-0.448501 -0.4798,-0.587001 -0.2537,-0.138399 -0.5678,-0.192901 -0.8731,-0.151401 l -9.5447,1.298102 c -0.3053,0.0416 -0.5769,0.175699 -0.7551,0.372999 -0.1781,0.197201 -0.24813,0.4414 -0.1947,0.6787 l 3.6635001,16.281999 c 0.0473,0.2105 0.1886,0.4013 0.3988999,0.5389 0.2103999,0.1376 0.4763999,0.2131 0.7512999,0.2134 0.068,0 0.1358,-0.0046 0.2028,-0.0137 l 9.5445001,-1.298 c 0.3053,-0.0415 0.5769,-0.1757 0.755,-0.3729 0.1781,-0.1972 0.2482,-0.4413 0.1948,-0.6787 l -0.1806,-0.8024 2.2211,-1.4313 c 0.872,-0.5646 1.9924,-0.8432 3.124,-0.777 l 15.5641,0.8844 c 0.0261,0.0015 0.0521,0.0023 0.0782,0.0024 h 0.0953 c 3.4346,-0.0054 6.7788,-0.8564 9.5527,-2.4309 0.0446,-0.0254 0.0868,-0.0533 0.1264,-0.0834 l 18.539399,-14.1115 c 0.212901,-0.161999 0.3381,-0.3811 0.3501,-0.6126 0.0121,-0.2314 -0.09,-0.4577 -0.2854,-0.632599 -1.029699,-0.924 -2.4776,-1.5043 -4.043199,-1.6203 -1.5655,-0.1161 -3.1284,0.241 -4.364101,0.997201 z M 5.7827,52.878944 2.5218,38.387544 9.7628001,37.402845 13.0237,51.894344 Z m 38.751699,-6.3698 c -2.357999,1.3277 -5.1921,2.047401 -8.103699,2.0577 H 36.3869 L 20.8622,47.668843 c -1.7326,-0.104199 -3.4493,0.319899 -4.7867,1.182601 l -1.1922,0.7646 -2.1763,-9.673699 c 1.7013,-1.3341 3.8328,-2.288201 6.1712,-2.7622 2.3383,-0.4741 4.7977,-0.4506 7.1204,0.0678 l 0.9734,0.2149 c 1.6934,0.3727 3.473,0.444699 5.207,0.2107 l 8.704,-1.183701 c 1.2108,-0.1634 2.4572,-0.0015 3.5339,0.4591 1.0767,0.4606 1.9197,1.1923 2.3902,2.0749 l -13.0305,1.7721 c -0.2883,0.0389 -0.5474,0.1605 -0.726,0.3407 -0.1786,0.1803 -0.2638,0.406 -0.2386,0.6327 0.0251,0.2266 0.1587,0.4377 0.3743,0.5915 0.2157,0.1538 0.4977,0.2392 0.7904,0.2392 0.0679,-10e-5 0.1358,-0.0047 0.2028,-0.0138 l 14.3074,-1.9456 c 0.3054,-0.0416 0.577,-0.1757 0.7551,-0.373 0.1781,-0.1972 0.2482,-0.4414 0.1947,-0.6788 -0.0933,-0.4141 -0.2422,-0.8195 -0.4442,-1.2095 l 8.7253,-5.0718 c 0.0081,-0.0047 0.0161,-0.0096 0.0241,-0.0145 0.6158,-0.3771 1.3671,-0.5962 2.1501,-0.6268 0.7829,-0.0307 1.5587,0.1286 2.2201,0.4558 z" fill="#51b370"></path>
+            <path d="m 36.414099,20.158243 h -4.253 v 3.491199 h -2.4248 v -3.491199 h -2.6279 v -2.0059 h 2.6279 v -1.739301 h -2.6279 v -1.993098 h 2.6279 V 5.1650437 h 6.8174 c 1.9805,0 3.5505,0.5036 4.71,1.5107 1.159501,1.0072 1.7392,2.3698001 1.7392,4.0879003 0,1.802799 -0.5586,3.195 -1.6758,4.1768 -1.1087,0.9733 -2.6871,1.464199 -4.7353,1.472598 h -4.4307 v 1.7393 h 4.253 z m -4.253,-5.738298 h 4.3926 c 1.3119,0 2.3106,-0.3089 2.9961,-0.9268 0.6856,-0.6178 1.0283,-1.5192 1.0283,-2.7041 0,-1.0749012 -0.3554,-1.9424012 -1.0664,-2.6025012 -0.7109,-0.6686 -1.6715,-1.0072001 -2.8818,-1.0156001 h -4.4688 z" fill="#51b370"></path>
+          </svg>
+          <h4 class="service__title">Выгодная покупка</h4>
+          <p class="service__text">Проведем полный цикл покупки квартиры, загородной и коммерческой недвижимости от подбора до помощи в регистрации права собственности.</p>
+        </div>
+
+        <div class="serv-item">
+          <svg width="55" height="61" viewBox="0 0 55 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27.2727" cy="33.7273" r="26.2727" stroke="#51B370" stroke-width="2"></circle>
+            <path d="M26.5918 19V33.7273L34.5 41" stroke="#51B370" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M26.5 7V1M26.5 1H18.5M26.5 1H35.4538" stroke="#51B370" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M5 34H9M26.5 11V15M46 34H50M26.5 52V56" stroke="#51B370" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <h4 class="service__title">Быстрая продажа</h4>
+          <p class="service__text">Организуем весь процесс продажи квартиры, загородной и коммерческой недвижимости от оценки рыночной недвижимости до заключения договора купли-продажи.</p>
+        </div>
+
+        <div class="serv-item">
+           <svg width="54" height="60" viewBox="0 0 54 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.636 39.976H42.332M12.636 47.864H42.332M1.5 1H52.54V59H1.5V1Z" stroke="#51B370" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14.4922 19.096L19.1322 15.4503M39.5482 18.632L35.3722 15.4503M35.3722 15.4503L27.4842 8.888L19.1322 15.4503M35.3722 15.4503V12.136M35.3722 15.4503V30.232H19.1322V15.4503M24.2362 18.632H29.8042V24.2H24.2362V18.632Z" stroke="#51B370" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <h4 class="service__title">Ипотечный брокер</h4>
+          <p class="service__text">Поможем получить ипотечное решение при наличии необходимых документов за 1 посещение! Преференции в банках-партнерах до -0,3%! Стоимость услуги по вторичному жилью 10 000 рублей. Услуга при покупке квартиры в новостройке БЕСПЛАТНА!</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Попап -->
+<div class="send_order" style="display: none;">
+    <div class="pop-up-form">
+        <span id="close">&#10005;</span>
+        <div id="form-content">
+            <h2 id="main-popup-title">Оставить заявку</h2>
+
+            <div class="input-box">
+                <label>ИМЯ</label>
+                 <div class="name-inp-box">
+                    <input id="pop-up-name" placeholder="Введите ваше имя" type="text"/>
+                    <div style="display: none;" class="succes_var">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#51B370"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6601 5.9816C13.3282 5.64253 12.777 5.64253 12.4451 5.9816L7.55986 10.9653L5.56193 8.9053C5.21746 8.57263 4.67883 8.57263 4.33436 8.9181C4.00868 9.26357 4.00868 9.81376 4.34063 10.1656L6.91476 12.7822L6.95234 12.827C7.29054 13.1789 7.83543 13.1789 8.17364 12.827L13.6601 7.22273C13.992 6.87726 13.992 6.32067 13.6601 5.9816Z" fill="white"></path>
+                        </svg>
+                    </div>
+
+                    <div style="display: none;" class="error_var">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#E7574E"></path>
+                            <path d="M12.0515 7.01652L10.0683 8.99998L12.0515 10.9833C12.3465 11.2784 12.3465 11.7565 12.0515 12.0516C11.9041 12.199 11.7109 12.2727 11.5178 12.2727C11.3243 12.2727 11.131 12.1991 10.9837 12.0516L9.00005 10.068L7.01652 12.0516C6.86915 12.199 6.67588 12.2727 6.48256 12.2727C6.2893 12.2727 6.09616 12.1991 5.94866 12.0516C5.65366 11.7566 5.65366 11.2785 5.94866 10.9833L7.93185 8.99996L5.94854 7.01652C5.65355 6.72153 5.65355 6.24337 5.94854 5.94837C6.24349 5.6536 6.72136 5.6536 7.01641 5.94837L9.00003 7.93183L10.9835 5.94837C11.2786 5.6536 11.7565 5.6536 12.0514 5.94837C12.3465 6.24337 12.3465 6.72153 12.0515 7.01652Z" fill="white"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>ТЕЛЕФОН</label>
+                <div class="phone-inp-box">
+                    <input id="pop-up-phone" type="text" placeholder="+7 (___) ___–____" />
+
+                    <div style="display: none;" class="succes_var">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#51B370"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6601 5.9816C13.3282 5.64253 12.777 5.64253 12.4451 5.9816L7.55986 10.9653L5.56193 8.9053C5.21746 8.57263 4.67883 8.57263 4.33436 8.9181C4.00868 9.26357 4.00868 9.81376 4.34063 10.1656L6.91476 12.7822L6.95234 12.827C7.29054 13.1789 7.83543 13.1789 8.17364 12.827L13.6601 7.22273C13.992 6.87726 13.992 6.32067 13.6601 5.9816Z" fill="white"></path>
+                        </svg>
+                    </div>
+
+                    <div style="display: none;" class="error_var">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#E7574E"></path>
+                            <path d="M12.0515 7.01652L10.0683 8.99998L12.0515 10.9833C12.3465 11.2784 12.3465 11.7565 12.0515 12.0516C11.9041 12.199 11.7109 12.2727 11.5178 12.2727C11.3243 12.2727 11.131 12.1991 10.9837 12.0516L9.00005 10.068L7.01652 12.0516C6.86915 12.199 6.67588 12.2727 6.48256 12.2727C6.2893 12.2727 6.09616 12.1991 5.94866 12.0516C5.65366 11.7566 5.65366 11.2785 5.94866 10.9833L7.93185 8.99996L5.94854 7.01652C5.65355 6.72153 5.65355 6.24337 5.94854 5.94837C6.24349 5.6536 6.72136 5.6536 7.01641 5.94837L9.00003 7.93183L10.9835 5.94837C11.2786 5.6536 11.7565 5.6536 12.0514 5.94837C12.3465 6.24337 12.3465 6.72153 12.0515 7.01652Z" fill="white"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" id="plan-href">
+
+            <p class="below_input_text">
+                Нажимая кнопку «Оставить заявку», вы соглашаетесь с <a href="https://kv-portal.ru/polit_obrab/">политикой обработки персональных данных</a>
+            </p>
+            <button id="for_send" class="buttonn">ОСТАВИТЬ ЗАЯВКУ</button>
+        </div>
+
+        <div id="succes_order" style="display: none">
+            <h2>Заявка отправлена</h2>
+            <p class="below_input_text">
+                Ваша заявка успешно отправлена.<br>
+                Наши специалисты свяжутся с вами в самое ближайшее время.
+            </p>
+            <button id="for_close" class="buttonn">ЗАКРЫТЬ</button>
+        </div>
+    </div>
+</div>
+<!-- Попап -->
+
+</body>
+</html> 
